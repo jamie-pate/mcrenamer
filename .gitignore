@@ -1,0 +1,7 @@
+/.vs
+*.csproj.user
+*_TemporaryKey.pfx
+/MinecraftRenamer/bin/Debug
+/MinecraftRenamer/obj/Debug
+/MinecraftRenamer/publish/
+/packages
