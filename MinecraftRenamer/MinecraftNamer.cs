@@ -149,7 +149,8 @@ namespace MCRenamer {
                         
                         var firstArgExpr = new Regex("^(?:\"([^\"]+)\" +|([^ ]+) )");
                         if (cl != null) {
-                            var newCl = firstArgExpr.Replace(usernameExpr.Replace(cl, "--username max"), "");
+                            var username = ((ProfileHolder)namesBox.SelectedItem).name;
+                            var newCl = firstArgExpr.Replace(usernameExpr.Replace(cl, "--username " + username), "");
                             var gameDir = gameDirExpr.Match(cl);
                             var jlp = jlpExpr.Match(cl);
                             var si = process.StartInfo;

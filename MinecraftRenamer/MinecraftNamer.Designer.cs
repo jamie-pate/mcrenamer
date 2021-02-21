@@ -31,9 +31,9 @@
             this.renameButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.reLaunchButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.loadButton = new System.Windows.Forms.Button();
-            this.reLaunchButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -129,6 +129,17 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1037, 70);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
+            // reLaunchButton
+            // 
+            this.reLaunchButton.Location = new System.Drawing.Point(829, 8);
+            this.reLaunchButton.Margin = new System.Windows.Forms.Padding(8);
+            this.reLaunchButton.Name = "reLaunchButton";
+            this.reLaunchButton.Size = new System.Drawing.Size(200, 54);
+            this.reLaunchButton.TabIndex = 2;
+            this.reLaunchButton.Text = "ReLaunch";
+            this.reLaunchButton.UseVisualStyleBackColor = true;
+            this.reLaunchButton.Click += new System.EventHandler(this.reLaunchButton_Click);
+            // 
             // saveButton
             // 
             this.saveButton.Location = new System.Drawing.Point(613, 8);
@@ -152,17 +163,6 @@
             this.loadButton.Visible = false;
             this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
-            // reLaunchButton
-            // 
-            this.reLaunchButton.Location = new System.Drawing.Point(829, 8);
-            this.reLaunchButton.Margin = new System.Windows.Forms.Padding(8);
-            this.reLaunchButton.Name = "reLaunchButton";
-            this.reLaunchButton.Size = new System.Drawing.Size(200, 54);
-            this.reLaunchButton.TabIndex = 2;
-            this.reLaunchButton.Text = "ReLaunch";
-            this.reLaunchButton.UseVisualStyleBackColor = true;
-            this.reLaunchButton.Click += new System.EventHandler(this.reLaunchButton_Click);
-            // 
             // MinecraftNamer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -175,7 +175,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "MinecraftNamer";
-            this.Text = "Minecraft namer 2.0";
+            this.Text = "Minecraft namer 2.1";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
