@@ -44,7 +44,11 @@ namespace MCRenamer {
                 String path = Environment.ExpandEnvironmentVariables("%APPDATA%\\.minecraft");
                 jsonPath = $"{path}\\launcher_profiles_namer.json";
                 profiles = new Newtonsoft.Json.Linq.JObject();
-                jsonObj = JsonConvert.DeserializeObject(File.ReadAllText(jsonPath)) as Newtonsoft.Json.Linq.JObject;
+                try {
+                    jsonObj = JsonConvert.DeserializeObject(File.ReadAllText(jsonPath)) as Newtonsoft.Json.Linq.JObject;
+                } catch {
+                    jsonObj = new Newtonsoft.Json.Linq.JObject();
+                }
                 foreach (var p in jsonObj) {
                     profiles[p.Name] = p.Value;
                 }

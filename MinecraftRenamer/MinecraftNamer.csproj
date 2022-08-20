@@ -50,10 +50,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>2B0FD3282A7DBA66BEFFCEEB0A6E1E673D6D574E</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>790ED83D074D49E10056569F499ABC7B4B3711D4</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>MinecraftNamer_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>MinecraftNamer_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -63,6 +63,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Chrisl21-Minecraft-Folder-Grass.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MinecraftNamer_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -103,6 +109,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="MinecraftNamer_1_TemporaryKey.pfx" />
     <None Include="MinecraftNamer_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
